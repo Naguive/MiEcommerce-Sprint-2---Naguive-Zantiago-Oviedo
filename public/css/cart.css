@@ -1,0 +1,171 @@
+.container-volver {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+.text-carrito {
+  margin-top: 20px;
+}
+
+.container-volver:hover {
+  text-decoration: underline;
+}
+
+.main-container--volver {
+  display: flex;
+  align-items: center;
+}
+
+.main-container-flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container-arrow {
+  height: 30px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 300px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.otro-container {
+  max-width: 1024px;
+}
+
+.container-producto {
+  height: 80px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 1);
+  width: 1024px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  margin-top: 15px;
+}
+
+.text-producto {
+  font-size: 16px;
+  margin: 0 auto 0 8px;
+}
+
+.button-substract {
+  background-color: rgba(73, 79, 81, 1);
+  border-radius: 16px;
+  padding: 8px 16px;
+  width: auto;
+  height: 32px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  cursor: pointer;
+  margin: 0 16px 0 auto;
+}
+
+.substract-or-add {
+  display: flex;
+  align-items: center;
+  margin: 0 16px 0 24px;
+  border-radius: 16px;
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  border: 1px black solid;
+}
+
+.product-precio {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 8px 0 0px;
+}
+
+.s-a-substract,
+.s-a-add {
+  background-color: white;
+  border-radius: 16px;
+  font-size: 12px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.espacio-foto {
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  margin: 0 8px 0 8px;
+}
+
+.foto {
+  height: 64px;
+  margin: 0 8px 0 0px;
+  border-radius: 8px;
+}
+
+.espacio-precio {
+  width: 80px;
+  text-align: center;
+}
+
+.resumen-puntos {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-puntos {
+  display: flex;
+  align-items: center;
+  text-align: end;
+  margin: 40px 0 0 0;
+}
+
+.puntos {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0px 0 0px 10px;
+}
+
+.otros-puntos {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.button-pagar {
+  background-color: rgba(73, 79, 81, 1);
+  border-radius: 16px;
+  padding: 8px 16px;
+  width: auto;
+  height: 32px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  cursor: pointer;
+  margin: 15px 0 0 0;
+}
+
+.form-promocion {
+  margin-top: 10px;
+}
+
+.input-promocion {
+  padding: 8px;
+}
+
+.button-promocion {
+  padding: 8px;
+  background-color: black;
+  color: white;
+  border: white 1px solid;
+}

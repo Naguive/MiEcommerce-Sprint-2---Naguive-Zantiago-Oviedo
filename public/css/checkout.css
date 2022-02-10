@@ -1,0 +1,58 @@
+html {
+  height: 100%;
+}
+
+.bigWord {
+  padding-left: 183px;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.sorrymsg {
+  padding-left: 183px;
+  font-size: 20px;
+}
+
+.code {
+  padding-left: 183px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.msg {
+  padding-left: 183px;
+}
+
+.linkcontainer {
+  margin-top: 10px;
+  padding-left: 183px;
+}
+
+ol {
+  display: flex;
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 183px;
+}
+
+li {
+  padding-bottom: 15px;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+}
+
+div {
+  width: max-content;
+  display: inline-block;
+}
+
+#error {
+  display: inline-block;
+  margin-left: 100px;
+  height: 400px;
+  width: 400px;
+  border-radius: 250px;
+}

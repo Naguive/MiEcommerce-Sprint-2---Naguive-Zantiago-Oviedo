@@ -1,0 +1,33 @@
+[
+  {
+    "user": 1,
+    "cart": [
+      {
+        "product": 1,
+        "image": "https://tienda.havanna.com.ar/wp-content/uploads/2020/10/alfajor70caco.jpg",
+        "description": "Alfajores rellenos con dulce de leche",
+        "price": 15250,
+        "qty": 2
+      },
+      {
+        "product": 5,
+        "image": "https://tienda.havanna.com.ar/wp-content/uploads/2020/04/alfajorChocolatex12.jpg",
+        "description": "Alfajores rellenos con dulce",
+        "price": 16000,
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "user": 2,
+    "cart": [
+      {
+        "product": 5,
+        "image": "https://tienda.havanna.com.ar/wp-content/uploads/2020/04/alfajorChocolatex12.jpg",
+        "description": "Alfajores rellenos con dulce",
+        "price": 16000,
+        "qty": 1
+      }
+    ]
+  }
+]
