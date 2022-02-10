@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/product.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <script
+      src="https://kit.fontawesome.com/4070a3aa63.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Pagina de error</title>
+  </head>
+  <body>
+    <%- include("../partials/header")%>
+    <main>
+     
+      <h1 style="text-align: center; margin-top: 60px;"> <%= locals.productID ? productID : "ERROR NOT FOUND"  %> </h1>
+
+      <p style="text-align: center;">error pagina no encontrada</p>
+
+      <div class="contenedor-productos">
+        <h3 class="titulo1">Te puede interesar</h3>
+        <div class="contenedor-producto">
+          <img
+            src="/assets/images (2).jpeg"
+            alt="whiskey jack"
+            class="producto-img"
+          />
+          <div class="etiqueta">
+            <p class="nombre">Whiskey Jack Daniels Honey 750ml</p>
+            <div class="contenedor-puntos">
+              <p class="puntos">19.900</p>
+              <p class="leyenda">PUNTOS</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contenedor-producto">
+          <img
+            src="/assets/images (2).jpeg"
+            alt="whiskey jack"
+            class="producto-img"
+          />
+          <div class="etiqueta">
+            <p class="nombre">NOMBRE DEL PRODUCTO O SERVICIO</p>
+            <div class="contenedor-puntos">
+              <p class="puntos">XX.XXX</p>
+              <p class="leyenda">PUNTOS</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contenedor-producto">
+          <img
+            src="/assets/images (2).jpeg"
+            alt="whiskey jack"
+            class="producto-img"
+          />
+          <div class="etiqueta">
+            <p class="nombre">NOMBRE DEL PRODUCTO O SERVICIO</p>
+            <div class="contenedor-puntos">
+              <p class="puntos">XX.XXX</p>
+              <p class="leyenda">PUNTOS</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contenedor-producto">
+          <img
+            src="/assets/images (2).jpeg"
+            alt="whiskey jack"
+            class="producto-img"
+          />
+          <div class="etiqueta">
+            <p class="nombre">NOMBRE DEL PRODUCTO O SERVICIO</p>
+            <div class="contenedor-puntos">
+              <p class="puntos">XX.XXX</p>
+              <p class="leyenda">PUNTOS</p>
+            </div>
+          </div>
+        </div>
+
+        
+    </main>
+    <%- include("../partials/footer")%>
+
+</body>
+</html>

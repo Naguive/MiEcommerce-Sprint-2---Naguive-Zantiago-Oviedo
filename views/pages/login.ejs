@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="/css/footer-abajo.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <img src="/assets/MiEcommerce.png" alt="" class="logo" />
+    </header>
+    <main class="main-container">
+      <div class="background-login-aqua">
+        <div class="component-login">
+          <div class="form">
+            <p class="text-hola">¡Hola!</p>
+            <form method="POST" action="/users/login" class="form-inputs">
+              <input
+                type="text"
+                class="username-input"
+                placeholder="Tu nombre de usuario"
+                name="email"
+              />
+              <% if (locals.errors && errors.email ) {%>
+              <p class="texto-alerta"><%= errors.email.msg %></p>
+              <% } %>
+              <input
+                type="password"
+                class="user-password"
+                placeholder="Tu contraseña"
+                name="password"
+              />
+              <% if (locals.errors && errors.password ) {%>
+              <p class="texto-alerta"><%= errors.password.msg %></p>
+              <% } %>
+              <button type="submit" class="button-login">Iniciar Sesión</button>
+            </form>
+          </div>
+          <div class="text-no-cuenta">
+            <p class="tienes-cuenta">¿No tienes cuenta?</p>
+            <a href="/users/register" class="text-registrate">Registrate</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/cart.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <script
+      src="https://kit.fontawesome.com/4070a3aa63.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include("../partials/header")%>
+    <main class="main-container">
+      <div class="otro-container">
+        <div class="main-container--volver">
+          <img src="/assets/arrow-left.svg" alt="" class="container-arrow" />
+          <a class="container-volver" href="#">Volver</a>
+        </div>
+        <h2 class="text-carrito">Productos en tu Carrito</h2>
+        <% locals.carritoByUser.forEach(product => { %>
+        <div class="container-producto">
+          <div class="espacio-foto">
+            <img
+              src="<%= product.image %>"
+              alt="Botella Jack's Daniel's Tenessee Honey Botella 750mL"
+              class="foto botella"
+            />
+          </div>
+          <p class="text-producto"><%= product.description %></p>
+          <button class="button-substract">Quitar</button>
+          <div class="substract-or-add">
+            <form
+              action="/api/cart/delete/<%= locals.user %>?p=<%= product.product %> "
+              method="post"
+            >
+              <button class="s-a-substract" type="submit">-</button>
+            </form>
+            <p class="product-quantity"><%= product.qty %></p>
+            <form
+              action="/api/cart/<%= locals.user %>?p=<%= product.product %> "
+              method="post"
+            >
+              <button class="s-a-add" type="submit">+</button>
+            </form>
+          </div>
+          <div class="espacio-precio">
+            <p class="product-precio"><%= product.price %></p>
+          </div>
+        </div>
+        <% }) %>
+        <div class="resumen-puntos">
+          <div class="otros-puntos">
+            <div class="total-puntos">
+              <h3>Total de puntos</h3>
+              <p class="puntos">26.420</p>
+            </div>
+            <a href="/checkout"
+              ><button class="button-pagar">Ir a pagar</button></a
+            >
+            <form action="" class="form-promocion">
+              <input
+                type="text"
+                class="input-promocion"
+                placeholder="Escriba el cupón"
+              />
+              <button class="button-promocion">Aplicar cupón</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('../partials/footer') %>
+  </body>
+</html>

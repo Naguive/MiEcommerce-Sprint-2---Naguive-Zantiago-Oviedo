@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/product.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <script
+      src="https://kit.fontawesome.com/4070a3aa63.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Producto</title>
+  </head>
+  <body>
+    <%- include("../partials/header")%>
+    <main class="main-container">
+      <div class="container">
+        <section class="container-root">
+          <img src="/assets/arrow-left.svg" alt="" class="container-arrow" />
+          <a class="container-volver" href="/">Volver</a>
+          <img src="/assets/chevron-right.svg" alt="" class="container-arrow" />
+          <a class="container-volver" href="#">Alimentos</a>
+        </section>
+        <section class="container-producto-detalle">
+          <div class="flow-images">
+            <img
+              src="/assets/D_NQ_NP_717087-MLA41598235072_042020-O.webp"
+              alt=""
+              class="foto-detalle-flow"
+            />
+            <img
+              src="/assets/images (2).jpeg"
+              alt=""
+              class="foto-detalle-flow"
+            />
+            <img
+              src="/assets/D_NQ_NP_705560-MLA44741701921_012021-O.webp"
+              alt=""
+              class="foto-detalle-flow"
+            />
+          </div>
+          <div class="foto-demostracion">
+            <img
+              src="<%= locals.productToShow.image %>"
+              alt=""
+              class="foto-detalle-xlsize"
+            />
+          </div>
+          <div class="product-info">
+            <p class="title-product"><%= locals.productToShow.title %></p>
+            <div class="section-puntos">
+              <p class="text-puntos"><%= locals.productToShow.price %></p>
+              <p class="subtitle-puntos">PUNTOS</p>
+            </div>
+            <div class="button-add-to-cart">
+              <a class="to-cart" href="/cart"> Agregar al Carrito </a>
+            </div>
+            <p class="text-product-info">
+              <%= locals.productToShow.description %>
+            </p>
+          </div>
+        </section>
+        <section class="text-opciones">
+          <p class="text-te-puede-interesar">También te puede interesar</p>
+        </section>
+        <section class="lista-productos">
+          <div class="contenedor-producto">
+            <img
+              src="/assets/images (1).jpeg"
+              alt="whiskey jack"
+              class="producto-img"
+            />
+            <div class="etiqueta">
+              <p class="nombre">Coca Cola Lata 220mL Pack Original x8</p>
+              <div class="contenedor-puntos">
+                <p class="puntos">760</p>
+                <p class="leyenda">PUNTOS</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contenedor-producto">
+            <img
+              src="/assets/images (1).jpeg"
+              alt="whiskey jack"
+              class="producto-img"
+            />
+            <div class="etiqueta">
+              <p class="nombre">NOMBRE DEL PRODUCTO O SERVICIO</p>
+              <div class="contenedor-puntos">
+                <p class="puntos">XX.XXX</p>
+                <p class="leyenda">PUNTOS</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contenedor-producto">
+            <img
+              src="/assets/images (1).jpeg"
+              alt="whiskey jack"
+              class="producto-img"
+            />
+            <div class="etiqueta">
+              <p class="nombre">NOMBRE DEL PRODUCTO O SERVICIO</p>
+              <div class="contenedor-puntos">
+                <p class="puntos">XX.XXX</p>
+                <p class="leyenda">PUNTOS</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contenedor-producto">
+            <img
+              src="/assets/images (1).jpeg"
+              alt="whiskey jack"
+              class="producto-img"
+            />
+            <div class="etiqueta">
+              <p class="nombre">NOMBRE DEL PRODUCTO O SERVICIO</p>
+              <div class="contenedor-puntos">
+                <p class="puntos">XX.XXX</p>
+                <p class="leyenda">PUNTOS</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <%- include("../partials/menu")%>
+      </div>
+    </main>
+    <footer>
+      <div class="social-media">
+        <img src="/assets/twitter.svg" alt="Logotipo" class="grupo1" />
+        <img src="/assets/facebook.svg" alt="Logotipo" class="grupo1" />
+        <img src="/assets/instagram.svg" alt="Logotipo" class="grupo1" />
+        <img src="/assets/youtube.svg" alt="Logotipo" class="grupo1" />
+      </div>
+      <div class="derechos">
+        <p class="Derechos">
+          &copy; MiEcommerce. Todos los derechos reservados
+        </p>
+      </div>
+      <div class="tiendas">
+        <img src="/assets/Apple.svg" alt="Logotipo" class="grupo2" />
+        <p class="TextoFooter">App Store</p>
+        <img src="/assets/Google-play.svg" alt="Logotipo" class="grupo2" />
+        <p class="TextoFooter">Google Play</p>
+      </div>
+    </footer>
+  </body>
+</html>
